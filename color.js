@@ -19,6 +19,16 @@ class Color{
         this.btn4.addEventListener("click",()=>{
             this.select_color("btn4");
         });
+
+        this.btn5 = document.getElementById("btn5");
+        this.btn5.addEventListener("click",()=>{
+            this.select_color("btn5");
+        });
+
+        this.btn6 = document.getElementById("btn6");
+        this.btn6.addEventListener("click",()=>{
+            this.select_color("btn6");
+        });
         
         if(localStorage.getItem("COLOR")==null){
             document.body.style.background = "linear-gradient(to right, #200122, #6f0000)"; 
@@ -34,6 +44,10 @@ class Color{
             document.body.style.background = "linear-gradient(to right, #ed213a, #93291e)";
         }else  if(color=="btn4"){
             document.body.style.background = "linear-gradient(to right, #232526, #414345)";
+        }else  if(color=="btn5"){
+            document.body.style.background = "#8fc0c3";
+        }else  if(color=="btn6"){
+            document.body.style.background = "#9134cb";
         }
         localStorage.setItem("COLOR",color);
     }

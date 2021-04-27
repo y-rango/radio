@@ -55,6 +55,7 @@ input[type="range" i]{
 } */
 h2{
     margin: 15px 0px;
+    color: white;
 }
 #color{
     text-align: center;
@@ -77,4 +78,10 @@ h2{
 }
 #btn4{
     background: linear-gradient(to right, #232526, #414345);
+}
+#btn5{
+    background: #8fc0c3;
+}
+#btn6{
+    background: #9134cb;
 }
